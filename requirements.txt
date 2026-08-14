@@ -27,5 +27,6 @@ python-dotenv
 #ML Utilities
 numpy
 scikit-learn
+streamlit
 
 # i install this requirements from directly terminal - pip install torch, pip install torch
