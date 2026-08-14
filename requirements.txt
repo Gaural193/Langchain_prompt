@@ -1,0 +1,31 @@
+#langchain core
+langchain
+langchain-core
+
+#OpenAi Integration
+langchain-openai
+OpenAi
+
+#Anthropic Integration
+langchain-anthropic
+
+# Google Gemini (PaLm) Integration
+langchain-google-genai
+google-generativeai
+
+#Hugging Face Integration
+langchain-huggingface
+transformers
+huggingface-hub
+
+# Environments Veriable Management
+python-dotenv
+# python-dotenv will load the secret key form the .env file to current working file.
+
+
+
+#ML Utilities
+numpy
+scikit-learn
+
+# i install this requirements from directly terminal - pip install torch, pip install torch
