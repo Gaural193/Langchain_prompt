@@ -41,14 +41,26 @@ length_input = st.selectbox("Serlet Explanation Length", ["Short(1-2 paragraph)"
 # )
 
 template = load_prompt('template.json')
-prompt = template.invoke({
+# prompt = template.invoke({
+#     'paper_input':paper_input,
+#     'style_input': style_input,
+#     'length_input':length_input
+# })
+
+# if st.button("Summarize"):
+#     result = model.invoke(prompt)
+#     st.write(result.content)
+
+# Now if we want to make a Chian.  
+
+
+if st.button("Summarize"):
+
+    chain = template | model 
+    result = chain.invoke({
     'paper_input':paper_input,
     'style_input': style_input,
     'length_input':length_input
-})
+    })
 
-if st.button("Summarize"):
-    result = model.invoke(prompt)
-    st.write(result.content)
-
-# Now if we want to 
+    st.write(result.content)    
